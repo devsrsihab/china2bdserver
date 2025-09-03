@@ -10,6 +10,45 @@ import httpStatus from 'http-status';
 import { TAdmin } from '../admin/admin.interface';
 import { Admin } from '../admin/admin.model';
 
+// 🔹 Get all users (excluding soft-deleted)
+const getAllUsers = async () => {
+  return await User.find({ isDeleted: false });
+};
+
+// 🔹 Get user by ID
+const getUserById = async (id: string) => {
+  return await User.findOne({ _id: id, isDeleted: false });
+};
+
+// 🔹 Create a new user
+const createUser = async (payload: Partial<TUser>) => {
+  // Check if email already exists (not soft deleted)
+  const existingUser = await User.findOne({
+    email: payload.email,
+    isDeleted: false,
+  });
+
+  if (existingUser) {
+    throw new AppError(httpStatus.CONFLICT, 'Email already exists');
+  }
+
+  const newUser = new User(payload);
+  return await newUser.save();
+};
+// 🔹 Update user
+const updateUser = async (id: string, payload: Partial<TUser>) => {
+  return await User.findOneAndUpdate({ _id: id, isDeleted: false }, payload, { new: true });
+};
+
+// 🔹 Soft delete user
+const softDeleteUser = async (id: string) => {
+  return await User.findByIdAndUpdate(
+    id,
+    { isDeleted: true, deletedAt: new Date() },
+    { new: true },
+  );
+};
+
 // create Admin
 const createAdminToDB = async (password: string, payload: TAdmin) => {
   // create a user object
@@ -34,9 +73,6 @@ const createAdminToDB = async (password: string, payload: TAdmin) => {
     if (!newUser.length) {
       throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create user');
     }
-
-    // set user id in student id field
-    payload.id = newUser[0].id; // embating id
 
     // set student user field data
     payload.user = newUser[0]._id; // reference id
@@ -94,4 +130,9 @@ export const UserServices = {
   createAdminToDB,
   getMeFromDB,
   changeStatus,
+  getAllUsers,
+  getUserById,
+  createUser,
+  updateUser,
+  softDeleteUser,
 };

@@ -64,7 +64,10 @@ const auth = (...requiredUserRole: TUserRole[]) => {
     // }
 
     if (requiredUserRole && !requiredUserRole.includes(role)) {
-      throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized');
+      throw new AppError(
+        httpStatus.UNAUTHORIZED,
+        'Your role have not permission to access this resource',
+      );
     }
 
     req.user = decoded as JwtPayload;
