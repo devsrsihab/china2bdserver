@@ -1,9 +1,33 @@
 import { z } from 'zod';
 
+const roleEnum = z.enum(['user', 'admin', 'supplier', 'manager']);
+const statusEnum = z.enum(['active', 'inactive', 'banned']);
+
+// register validation
+const registerValidationSchema = z.object({
+  body: z.object({
+    name: z.string().min(3, 'Name is required'),
+    email: z.string().email('Invalid email'),
+    password: z.string().min(6, 'Password must be at least 6 characters'),
+
+    phone: z.string().optional(),
+    address: z.string().optional(),
+    district: z.string().optional(),
+    city: z.string().optional(),
+    emergencyNumber: z.string().optional(),
+    profileImage: z.string().url('Must be a valid URL').optional(),
+
+    role: roleEnum.default('user'),
+    status: statusEnum.default('active'),
+  }),
+});
+
 // login validation
 const loginValidatonSchema = z.object({
   body: z.object({
-    id: z.string({ required_error: 'id is required', invalid_type_error: 'id must be string' }),
+    email: z
+      .string({ required_error: 'email is required', invalid_type_error: 'email must be string' })
+      .email('Invalid email'),
     password: z.string({
       required_error: 'password is required',
       invalid_type_error: 'password must be string',
@@ -38,7 +62,7 @@ const refreshTokenValidatonSchema = z.object({
 // forget password
 const forgetPasswordValidationSchema = z.object({
   body: z.object({
-    id: z.string({
+    email: z.string({
       required_error: 'User id is required',
     }),
   }),
@@ -47,7 +71,7 @@ const forgetPasswordValidationSchema = z.object({
 // reset password
 const resetPasswordValidationSchema = z.object({
   body: z.object({
-    id: z.string({
+    email: z.string({
       required_error: 'User id is required',
     }),
     newPassword: z.string({
@@ -62,4 +86,5 @@ export const AuthValidation = {
   refreshTokenValidatonSchema,
   forgetPasswordValidationSchema,
   resetPasswordValidationSchema,
+  registerValidationSchema,
 };

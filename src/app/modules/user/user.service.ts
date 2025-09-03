@@ -28,8 +28,6 @@ const createAdminToDB = async (password: string, payload: TAdmin) => {
     // start session
     session.startTransaction();
 
-    userData.id = await generatAdminId();
-
     // create a user transaction 01
     const newUser = await User.create([userData], { session }); // transaction return array
     // if created the user successfully then create the user
@@ -65,22 +63,22 @@ const createAdminToDB = async (password: string, payload: TAdmin) => {
 };
 
 // get me servcies
-const getMeFromDB = async (userId: string, role: string) => {
+const getMeFromDB = async (email: string, role: string) => {
   let result = null;
 
   // if user
   if (role === 'student') {
-    result = await User.findOne({ id: userId });
+    result = await User.findOne({ id: email });
   }
 
   // if faculty
   if (role === 'faculty') {
-    result = await User.findOne({ id: userId });
+    result = await User.findOne({ id: email });
   }
 
   // if admin
   if (role === 'admin') {
-    result = await User.findOne({ id: userId });
+    result = await User.findOne({ id: email });
   }
 
   return result;

@@ -5,7 +5,20 @@ import sendResponse from '../../utils/sendResponse';
 import { AuthServices } from './auth.service';
 import config from '../../config';
 
-// create
+// change password
+const registerUser = catchAsync(async (req, res) => {
+  const registerData = req.body;
+  const result = await AuthServices.registerUser(registerData);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'register user successfully',
+    data: result,
+  });
+});
+
+// login
 const loginUser = catchAsync(async (req, res) => {
   const result: any = await AuthServices.loginUser(req.body);
   const { refreshToken, accessToken, neetPassWord } = result;
@@ -14,7 +27,7 @@ const loginUser = catchAsync(async (req, res) => {
   res.cookie('refreshToken', refreshToken, {
     secure: config.NODE_ENV === 'production',
     httpOnly: true,
-    sameSite: true, 
+    sameSite: true,
     maxAge: 1000 * 60 * 60 * 24 * 365,
   });
 
@@ -56,8 +69,8 @@ const refreshToken = catchAsync(async (req, res) => {
 
 // forget password
 const forgetPassword = catchAsync(async (req, res) => {
-  const { id } = req.body;
-  const result = await AuthServices.forgetPassword(id);
+  const { email } = req.body;
+  const result = await AuthServices.forgetPassword(email);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
@@ -84,4 +97,5 @@ export const AuthControllers = {
   refreshToken,
   forgetPassword,
   resetPassword,
+  registerUser,
 };

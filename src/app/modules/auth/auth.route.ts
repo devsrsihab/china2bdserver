@@ -7,6 +7,12 @@ import auth from '../../middlewares/auth';
 
 const router = express.Router();
 
+// register
+router.post(
+  '/register',
+  validateRequest(AuthValidation.registerValidationSchema),
+  AuthControllers.registerUser,
+);
 // login
 router.post(
   '/login',
@@ -17,12 +23,12 @@ router.post(
 // passwrod change
 router.post(
   '/change-password',
-  auth(USER_ROLE.admin, USER_ROLE.student, USER_ROLE.faculty),
+  auth(USER_ROLE.admin, USER_ROLE.user, USER_ROLE.supplier, USER_ROLE.manager),
   validateRequest(AuthValidation.changePasswordValidatonSchema),
   AuthControllers.changePassword,
 );
 
-// refresh token 
+// refresh token
 router.post(
   '/refresh-token',
   validateRequest(AuthValidation.refreshTokenValidatonSchema),
@@ -42,6 +48,5 @@ router.post(
   validateRequest(AuthValidation.resetPasswordValidationSchema),
   AuthControllers.resetPassword,
 );
-
 
 export const AuthRoute = router;

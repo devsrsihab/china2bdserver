@@ -1,39 +1,27 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, Document } from 'mongoose';
 import { TUser, UserModel } from './user.interface';
 import bcrypt from 'bcrypt';
 import config from '../../config';
-import { USER_STATUS } from './user.constant';
+
+const USER_ROLES = ['super-admin', 'admin', 'user', 'supplier', 'manager'] as const;
+const USER_STATUS = ['active', 'blocked'] as const;
 
 const userSchema = new Schema<TUser, UserModel>(
   {
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    password: {
-      type: String,
-      required: true,
-      select: 0,
-    },
-    needPasswordChange: {
-      type: Boolean,
-      required: true,
-      default: true,
-    },
-    passwordChangedAt: {
-      type: Date,
-    },
+    name: { type: String, required: true, trim: true },
+    email: { type: String, required: true, unique: true, lowercase: true, trim: true },
+    phone: { type: String, trim: true },
+    address: { type: String },
+    district: { type: String },
+    city: { type: String },
+    emergencyNumber: { type: String },
+    profileImage: { type: String },
+    password: { type: String, required: true, select: false },
     role: {
       type: String,
       enum: {
-        values: ['super-admin', 'admin', 'student', 'faculty'],
-        message: "{VALUE} is not valid. Allowed values are 'admin', 'student', or 'teacher'",
+        values: USER_ROLES,
+        message: `{VALUE} is not valid. Allowed: ${USER_ROLES.join(', ')}`,
       },
       required: true,
     },
@@ -41,55 +29,64 @@ const userSchema = new Schema<TUser, UserModel>(
       type: String,
       enum: {
         values: USER_STATUS,
-        message: "{VALUE} is not valid. Allowed values are 'in-progress' or 'blocked'",
+        message: `{VALUE} is not valid. Allowed: ${USER_STATUS.join(', ')}`,
       },
-      default: 'in-progress',
+      default: 'active',
       required: true,
     },
-    isDeleted: {
-      type: Boolean,
-      default: false,
-    },
+    isEmailVerified: { type: Boolean, default: false },
+    emailVerifiedAt: { type: Date },
+    isPhoneVerified: { type: Boolean, default: false },
+    phoneVerifiedAt: { type: Date },
+    lastLoginAt: { type: Date, default: null },
+    deletedAt: { type: Date, default: null },
+    isDeleted: { type: Boolean, default: false },
   },
-  {
-    timestamps: true,
-  },
+  { timestamps: true },
 );
 
-// pre middleware / hook: we will work ot it create() save()
+// 🔹 Pre-save: hash password if modified
 userSchema.pre('save', async function (next) {
-  // eslint-disable-next-line @typescript-eslint/no-this-alias
-  const user = this;
-  //hasing password
-  user.password = await bcrypt.hash(user.password, Number(config.bcrypt_salt_rounds));
-  // next step
-  next();
-});
-// post middleware / hook: we will work ot it create() save()
-userSchema.post('save', function (doc, next) {
-  doc.password = '';
+  if (this.isModified('password')) {
+    this.password = await bcrypt.hash(this.password, Number(config.bcrypt_salt_rounds));
+  }
   next();
 });
 
-// user exist cusotm static method
-userSchema.statics.isUserExistByCustomId = async function (id: string) {
-  return await User.findOne({ id }).select('+password');
+// 🔹 Post-save: hide password
+userSchema.post('save', function (doc: Document & TUser, next) {
+  (doc as any).password = undefined;
+  next();
+});
+
+// 🔹 Static method: find user by email
+userSchema.statics.isUserExistByEmail = async function (email: string) {
+  return await this.findOne({ email, isDeleted: false }).select('+password');
 };
-// user exist cusotm static method
+
+// 🔹 Static method: compare passwords
 userSchema.statics.isPasswordMatch = async function (
   plainTextPassword: string,
   hashedPassword: string,
 ) {
   return await bcrypt.compare(plainTextPassword, hashedPassword);
 };
-// check is the jwt token issued before password changed
-userSchema.statics.isJWTIssuedBeforePasswordChanged = async function (
+
+// 🔹 Static method: is user exist with email
+userSchema.statics.isUserExistByEmail = async function (email: string) {
+  return (await this.findOne({ email, isDeleted: false }).select('+password')) as
+    | (TUser & { password?: string })
+    | null;
+};
+
+// 🔹 Static method: JWT issued before password change
+userSchema.statics.isJWTIssuedBeforePasswordChanged = function (
   passwordChangedTimeStamp: Date,
   jwtIssuedTimeStamp: number,
 ) {
-  const passwordChangedTime = Math.round(new Date(passwordChangedTimeStamp).getTime() / 1000);
+  const passwordChangedTime = Math.floor(new Date(passwordChangedTimeStamp).getTime() / 1000);
   return passwordChangedTime > jwtIssuedTimeStamp;
 };
 
-// make model
+// ✅ Model
 export const User = model<TUser, UserModel>('User', userSchema);

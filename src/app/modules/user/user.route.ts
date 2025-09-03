@@ -19,11 +19,7 @@ router.post(
 );
 
 // get me
-router.get(
-  '/me',
-  auth(USER_ROLE.admin, USER_ROLE.student, USER_ROLE.faculty),
-  UserController.getMe,
-);
+router.get('/me', auth(USER_ROLE.admin, USER_ROLE.user, USER_ROLE.supplier), UserController.getMe);
 
 // change status
 router.patch(

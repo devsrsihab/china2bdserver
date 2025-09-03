@@ -13,11 +13,7 @@ router.post(
   validateRequest(CourseValidations.createCourseValidationSchema),
   CourseControllers.createCourse,
 );
-router.get(
-  '/',
-  auth(USER_ROLE.admin, USER_ROLE.faculty, USER_ROLE.student),
-  CourseControllers.getAllCourses,
-);
+router.get('/', CourseControllers.getAllCourses);
 router.get('/:courseId', CourseControllers.getSingleCourse);
 router.patch(
   '/:courseId',

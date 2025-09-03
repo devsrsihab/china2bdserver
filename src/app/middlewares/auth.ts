@@ -35,8 +35,8 @@ const auth = (...requiredUserRole: TUserRole[]) => {
     }
 
     // user role checking
-    const { role, userId, iat } = decoded as JwtPayload;
-    const user = await User.isUserExistByCustomId(userId);
+    const { role, email, iat } = decoded as JwtPayload;
+    const user = await User.isUserExistByEmail(email);
     const isDeleted = user?.isDeleted;
     const isUserBlocked = user?.status === 'blocked';
 
@@ -56,12 +56,12 @@ const auth = (...requiredUserRole: TUserRole[]) => {
     }
 
     // check the user issed password or jwt issued  time
-    if (
-      user.passwordChangedAt &&
-      (await User.isJWTIssuedBeforePasswordChanged(user.passwordChangedAt, iat as number))
-    ) {
-      throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized');
-    }
+    // if (
+    //   user.passwordChangedAt &&
+    //   (await User.isJWTIssuedBeforePasswordChanged(user.passwordChangedAt, iat as number))
+    // ) {
+    //   throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized');
+    // }
 
     if (requiredUserRole && !requiredUserRole.includes(role)) {
       throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized');
