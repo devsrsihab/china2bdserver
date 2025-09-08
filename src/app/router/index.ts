@@ -4,6 +4,7 @@ import { CourseRoute } from '../modules/course/course.route';
 import { AdminRoute } from '../modules/admin/admin.route';
 import { AuthRoute } from '../modules/auth/auth.route';
 import { OrderStatusRoute } from '../modules/ordersStatus/ordersStatus.route';
+import { GlobalOfferPricingRoute } from '../modules/globalOfferPricing/globalOfferPricing.route';
 
 const router = Router();
 
@@ -29,6 +30,11 @@ const moduleRoutes = [
     path: '/order-status',
     route: OrderStatusRoute,
   },
+  {
+    path: '/offers',
+    route: GlobalOfferPricingRoute,
+  },
+  
 ];
 
 // travers the all route

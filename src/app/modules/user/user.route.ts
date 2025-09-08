@@ -47,18 +47,18 @@ router.get('/usertest', UserController.testMethod);
 // admin create
 router.post(
   '/create-admin',
-  auth(USER_ROLE.admin),
+  auth(USER_ROLE.admin, USER_ROLE.superAdmin,),
   validateRequest(AdminValidations.createAdminValidationSchema),
   UserController.createAdmin,
 );
 
 // get me
-router.get('/me', auth(USER_ROLE.admin, USER_ROLE.user, USER_ROLE.supplier), UserController.getMe);
+router.get('/me', auth(USER_ROLE.admin,USER_ROLE.superAdmin, USER_ROLE.user, USER_ROLE.supplier), UserController.getMe);
 
 // change status
 router.patch(
   '/change-status/:id',
-  auth(USER_ROLE.admin),
+  auth(USER_ROLE.admin, USER_ROLE.superAdmin,),
   validateRequest(UserValidations.changeStatusValidationSchema),
   UserController.changeStatus,
 );
