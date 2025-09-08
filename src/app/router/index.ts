@@ -5,6 +5,7 @@ import { AdminRoute } from '../modules/admin/admin.route';
 import { AuthRoute } from '../modules/auth/auth.route';
 import { OrderStatusRoute } from '../modules/ordersStatus/ordersStatus.route';
 import { GlobalOfferPricingRoute } from '../modules/globalOfferPricing/globalOfferPricing.route';
+import { GlobalPriceRuleRoute } from '../modules/globalPriceRule/globalPriceRule.route';
 
 const router = Router();
 
@@ -33,6 +34,10 @@ const moduleRoutes = [
   {
     path: '/offers',
     route: GlobalOfferPricingRoute,
+  },
+  {
+    path: '/pricing-rules',
+    route: GlobalPriceRuleRoute,
   },
   
 ];
