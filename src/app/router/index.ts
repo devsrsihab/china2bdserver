@@ -1,11 +1,11 @@
 import { Router } from 'express';
 import { UserRoute } from '../modules/user/user.route';
-import { CourseRoute } from '../modules/course/course.route';
 import { AdminRoute } from '../modules/admin/admin.route';
 import { AuthRoute } from '../modules/auth/auth.route';
 import { OrderStatusRoute } from '../modules/ordersStatus/ordersStatus.route';
 import { GlobalOfferPricingRoute } from '../modules/globalOfferPricing/globalOfferPricing.route';
 import { GlobalPriceRuleRoute } from '../modules/globalPriceRule/globalPriceRule.route';
+import { ProductRoutes } from '../modules/product/product.route';
 
 const router = Router();
 
@@ -15,10 +15,7 @@ const moduleRoutes = [
     path: '/users',
     route: UserRoute,
   },
-  {
-    path: '/courses',
-    route: CourseRoute,
-  },
+
   {
     path: '/admins',
     route: AdminRoute,
@@ -38,6 +35,10 @@ const moduleRoutes = [
   {
     path: '/pricing-rules',
     route: GlobalPriceRuleRoute,
+  },
+  {
+    path: '/products',
+    route: ProductRoutes,
   },
   
 ];

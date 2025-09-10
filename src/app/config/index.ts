@@ -19,4 +19,6 @@ export default {
   cloudinary_api_key: process.env.CLOUDINARY_API_KEY,
   cloudinary_api_secret: process.env.CLOUDINARY_API_SECRET,
   super_admin_password: process.env.SUPER_ADMIN_PASSWORD,
+  otc_instance_key: process.env.OTC_INSTANCE_KEY,
+  otc_base_url: process.env.OTC_BASE_URL,
 };
