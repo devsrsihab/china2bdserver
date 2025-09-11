@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import config from '../../config';
 import { TUser } from './user.interface';
 import { User } from './user.model';
-import { generatAdminId } from './user.utils';
 import AppError from '../../errors/appError';
 import httpStatus from 'http-status';
 

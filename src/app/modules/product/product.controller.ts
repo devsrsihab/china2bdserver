@@ -27,6 +27,7 @@ const getSubcategories = catchAsync(async (req: Request, res: Response) => {
 const getProductsBySubcategory = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const { framePosition = 0, frameSize = 10 } = req.query;
+  
 
   const result = await ProductService.getProductsBySubcategory(
     id,
@@ -66,10 +67,22 @@ const getVendorById = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getCategoriesWithSubcategories = catchAsync(async (req, res) => {
+  const result = await ProductService.getCategoriesWithSubcategories();
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Categories with subcategories fetched successfully",
+    data: result,
+  });
+});
+
+
 export const ProductController = {
   getAllCategories,
   getSubcategories,
   getProductsBySubcategory,
   getSingleProductById,
   getVendorById,
+  getCategoriesWithSubcategories
 };

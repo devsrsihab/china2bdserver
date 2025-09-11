@@ -13,7 +13,9 @@ router.get('/categories/:id/subcategories', ProductController.getSubcategories);
 router.get('/subcategories/:id/products', ProductController.getProductsBySubcategory);
 
 // 4. Get single product info
-router.get('/:id', ProductController.getSingleProductById);
+router.get('/single/:id', ProductController.getSingleProductById);
+
+router.get('/categories-with-subcategories', ProductController.getCategoriesWithSubcategories);
 
 // 5. Get vendor info
 router.get('/vendors/:id', ProductController.getVendorById);
