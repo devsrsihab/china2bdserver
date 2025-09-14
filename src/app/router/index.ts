@@ -6,6 +6,7 @@ import { OrderStatusRoute } from '../modules/ordersStatus/ordersStatus.route';
 import { GlobalOfferPricingRoute } from '../modules/globalOfferPricing/globalOfferPricing.route';
 import { GlobalPriceRuleRoute } from '../modules/globalPriceRule/globalPriceRule.route';
 import { ProductRoutes } from '../modules/product/product.route';
+import { SkybuyTestRoute } from '../modules/skybuy/ordersStatus.route';
 
 const router = Router();
 
@@ -39,6 +40,10 @@ const moduleRoutes = [
   {
     path: '/products',
     route: ProductRoutes,
+  },
+  {
+    path: '/skybuy',
+    route: SkybuyTestRoute,
   },
   
 ];

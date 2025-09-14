@@ -1,0 +1,3178 @@
+
+        {
+            "Id": "otc-454",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-125372002",
+            "Name": "Women's Shoes",
+            "IsParent": true,
+            "IsSearch": true,
+            "SearchMethod": "Storage",
+            "IsInternal": true,
+            "IconImageUrl": "https://open-demo.otcommerce.com/uploaded/category/heel.png",
+
+            "subcategories": [
+                {
+                    "Id": "otc-464",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-126506005",
+                    "Name": "Shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-455",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043193",
+                    "Name": "Sneakers",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-457",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1034353",
+                    "Name": "Boots",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-458",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-126482003",
+                    "Name": "Casual shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-459",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201555212",
+                    "Name": "High-heeled sandals",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-460",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-126552002",
+                    "Name": "Sports shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-461",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201557412",
+                    "Name": "Platform slippers",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-462",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201556614",
+                    "Name": "Platform sandals",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-465",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201898903",
+                    "Name": "Loafers",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-466",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-10170",
+                    "Name": "Warm shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-469",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201561411",
+                    "Name": "Flip-flops",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-470",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201555511",
+                    "Name": "High-heeled slippers",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-471",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123666005",
+                    "Name": "Winter shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-473",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201536601",
+                    "Name": "Women's leather shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-474",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201843201",
+                    "Name": "Women's crocs",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-475",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201548405",
+                    "Name": "Wedge heel sandals",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-476",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1032755",
+                    "Name": "Rubber boots",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-477",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121916001",
+                    "Name": "Sneakers",
+                    "IsParent": true,
+                    "ParentId": "otc-454",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-527",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-126506004",
+            "Name": "Men's Shoes",
+            "IsParent": true,
+            "IsInternal": true,
+            "subcategories": [
+                {
+                    "Id": "otc-528",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-126484005",
+                    "Name": "Sports shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-529",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123610003",
+                    "Name": "Sneakers, moccasins",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-530",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123864006",
+                    "Name": "Winter shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-531",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121880003",
+                    "Name": "Leather shoes and boots",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-532",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125388001",
+                    "Name": "Casual shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-533",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201310515",
+                    "Name": "Men's walking shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-534",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-126442003",
+                    "Name": "Men's Sneakers",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-535",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-126480003",
+                    "Name": "Loafers, moccasins, slipona, textile shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-538",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201831311",
+                    "Name": "Beach shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-539",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201863901",
+                    "Name": "Men's crocs and clogs",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-540",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125312007",
+                    "Name": "Flip-flops",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-541",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201835812",
+                    "Name": "Men's Chelsea boots",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-542",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201829215",
+                    "Name": "Men's Martin boots",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-543",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201837114",
+                    "Name": "Men's boots",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-544",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043191",
+                    "Name": "Rubber boots",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-545",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201837318",
+                    "Name": "casual leather shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-546",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125380002",
+                    "Name": "Sandals, summer shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-547",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1038548",
+                    "Name": "Classic boots",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-548",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123622002",
+                    "Name": "Warm shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-549",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201867902",
+                    "Name": "Men's flip-flops",
+                    "IsParent": true,
+                    "ParentId": "otc-527",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-14",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-10166",
+            "Name": "Womens Clothing",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-634",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031910",
+                    "Name": "Dresses",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-635",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031912",
+                    "Name": "Skirts",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-640",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125746001",
+                    "Name": "Women's sweaters",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-642",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127386001",
+                    "Name": "Wool sweaters",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-644",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1037020",
+                    "Name": "Jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-645",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201560705",
+                    "Name": "Women's denim jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-646",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031920",
+                    "Name": "Undershirts and tops",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-647",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125750002",
+                    "Name": "Baseball jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-648",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125420001",
+                    "Name": "Coat",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-651",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127360010",
+                    "Name": "Jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-654",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125748001",
+                    "Name": "Women's pants and shorts",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-655",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201585902",
+                    "Name": "Women's shorts",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-656",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201547109",
+                    "Name": "Women's sports pants",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-657",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031869",
+                    "Name": "Jeans",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-658",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127380008",
+                    "Name": "Leggings",
+                    "IsParent": true,
+                    "ParentId": "otc-14",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Id": "otc-404",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-1042954",
+            "Name": "Bags",
+            "IsParent": true,
+            "IsInternal": true,
+            "subcategories": [
+                {
+                    "Id": "otc-409",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124016002",
+                    "Name": "Women's bags and backpacks",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-407",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122216001",
+                    "Name": "Travel bags and suitcases",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-605",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201976403",
+                    "Name": "Casual backpacks",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-410",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127278005",
+                    "Name": "Bag and suitcase accessories ",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-411",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121658001",
+                    "Name": "Man's bags",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-412",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201558112",
+                    "Name": "Small cosmetic bags",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-413",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201956604",
+                    "Name": "Backpacks",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-414",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201556615",
+                    "Name": "Children's bags",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-406",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-10283",
+                    "Name": "Suitcases",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-415",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201551616",
+                    "Name": "School bags and backpacks",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-416",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201545602",
+                    "Name": "Sports bags",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-417",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122218002",
+                    "Name": "Phone bags",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-418",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122228002",
+                    "Name": "Wallets and purses",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-419",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201548701",
+                    "Name": "Cases and bags for laptops and tablets",
+                    "IsParent": true,
+                    "ParentId": "otc-404",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-1",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-97",
+            "Name": "Beauty Products",
+            "IsParent": true,
+            "IsInternal": true,
+            "IconImageUrl": "https://open-demo.otcommerce.com/uploaded/category/sneakers.png",
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-166",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201308710",
+                    "Name": "Face masks",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-167",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201303115",
+                    "Name": "Perfume",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-168",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201304705",
+                    "Name": "Lip makeup",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-169",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201307015",
+                    "Name": "Cosmetology accessories ",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-170",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201307604",
+                    "Name": "Eye makeup",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-171",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201962701",
+                    "Name": "Face medications",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-172",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201308310",
+                    "Name": "Face essences",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-173",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201309707",
+                    "Name": "Aromatherapy with essential oils",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-174",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-202027801",
+                    "Name": "Tattoo products",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-175",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201303117",
+                    "Name": "Eye care",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-176",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1042634",
+                    "Name": "Face care",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-177",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043498",
+                    "Name": "Lip care",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-178",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123650003",
+                    "Name": "Professional skin care line",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-179",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121702001",
+                    "Name": "Men's skin care",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-180",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-82101",
+                    "Name": "Face makeup",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-181",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-202138094",
+                    "Name": "Ski jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-182",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043171",
+                    "Name": "Beauty tools",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-183",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043162",
+                    "Name": "Nail products",
+                    "IsParent": true,
+                    "ParentId": "otc-1",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-15",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-54",
+            "Name": "Jewelry & Accessories",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-278",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122322005",
+                    "Name": "Pendants and necklaces",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-276",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124268003",
+                    "Name": "Wristwatches",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-281",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201221212",
+                    "Name": "Waist jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-284",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125740007",
+                    "Name": "Foot & belly jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-285",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127484008",
+                    "Name": "Gloves and mittens",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-287",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201220505",
+                    "Name": "Breast jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-288",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127464010",
+                    "Name": "Hats and headscarves",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-292",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127462007",
+                    "Name": "Belts and waistbands",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-295",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201149004",
+                    "Name": "Children's jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-296",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122706003",
+                    "Name": "Hand jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-300",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201545715",
+                    "Name": "Antique jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-303",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201228407",
+                    "Name": "Back jewelry",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-305",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1746",
+                    "Name": "Jewelry sets",
+                    "IsParent": true,
+                    "ParentId": "otc-15",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-3",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-10165",
+            "Name": "Mens Clothing",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-107",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122194006",
+                    "Name": "Men's coats",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-108",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1036995",
+                    "Name": "Sweaters",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-109",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-314",
+                    "Name": "Men's shirts",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-110",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127442001",
+                    "Name": "Casual wear for couples",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-111",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123650006",
+                    "Name": "Men's sweaters and sweaters",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-112",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201561908",
+                    "Name": "Men's shorts",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-113",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122232007",
+                    "Name": "Men's polo shirts",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-114",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031888",
+                    "Name": "Men's jeans",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-115",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201378222",
+                    "Name": "Men's ethnic wear",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-116",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-315",
+                    "Name": "Men's T-Shirts",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-117",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-317",
+                    "Name": "Men's jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-124",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-123694001",
+                    "Name": "Men's business suits",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-135",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127444001",
+                    "Name": "Men's trousers",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-137",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201465302",
+                    "Name": "Men's sports pants",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-142",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031889",
+                    "Name": "Men's pants",
+                    "IsParent": true,
+                    "ParentId": "otc-3",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-27",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-312",
+            "Name": "Underwear",
+            "IsParent": true,
+            "IsInternal": true,
+            "subcategories": [
+                {
+                    "Id": "otc-809",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122484001",
+                    "Name": "Shapewear",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-810",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201835213",
+                    "Name": "Men's underware",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-811",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122478003",
+                    "Name": "Undershirts, tops, sports bras",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-812",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122450001",
+                    "Name": "Women's panties",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-813",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201909602",
+                    "Name": "Nylon tights, stockings and socks",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-814",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043349",
+                    "Name": "Socks",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-815",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124188007",
+                    "Name": "Bras",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-816",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122500001",
+                    "Name": "Homewear",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-817",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122450002",
+                    "Name": "Erotic underwear",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-818",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-202057216",
+                    "Name": "Lingerie sets in gift boxes",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-819",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122528003",
+                    "Name": "Women's accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-820",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-202053009",
+                    "Name": "Autumn thermal underwear",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-821",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122558002",
+                    "Name": "Thermal underwear and clothing",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-822",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031904",
+                    "Name": "Other underware",
+                    "IsParent": true,
+                    "ParentId": "otc-27",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-1317",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-80",
+            "Name": "Eyewear",
+            "IsParent": true,
+            "IsInternal": true,
+            "subcategories": [
+                {
+                    "Id": "otc-1318",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1031922",
+                    "Name": "Sunglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1319",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1033155",
+                    "Name": "Frames and accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1320",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127896010",
+                    "Name": "Reading eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1321",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1033151",
+                    "Name": "Cases for eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1322",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124154001",
+                    "Name": "Children's sunglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1323",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201034004",
+                    "Name": "Optical lens eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1324",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124742036",
+                    "Name": "Functional and work eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1326",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201028005",
+                    "Name": "Party eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1328",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201163103",
+                    "Name": "Eyeglass cleaners",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1329",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124746031",
+                    "Name": "Computer glasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1330",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1033153",
+                    "Name": "Eyeglass lens ",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1331",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201194102",
+                    "Name": "Eyeglass chains",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1333",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1033149",
+                    "Name": "Eyeglass repair accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1335",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124152001",
+                    "Name": "3D eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1336",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127894010",
+                    "Name": "Children's eyeglass frames",
+                    "IsParent": true,
+                    "ParentId": "otc-1317",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-11",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-311",
+            "Name": "Kids Items",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-486",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-125386001",
+                    "Name": "Baby shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-800",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1032763",
+                    "Name": "Diapers",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-803",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1037002",
+                    "Name": "Bibs ",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-801",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122462001",
+                    "Name": "Blankets and envelopes",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-799",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1042611",
+                    "Name": "Sleepwear",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-776",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201554412",
+                    "Name": "Baby polo shirts",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-777",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1037011",
+                    "Name": "Baby shirts",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-779",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127430003",
+                    "Name": "Baby leggings",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-780",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1037192",
+                    "Name": "Baby clothing sets",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-782",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201551614",
+                    "Name": "coats and jackets",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-784",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201546613",
+                    "Name": "Baby dresses and skirts",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-788",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043351",
+                    "Name": "socks and knee-highs",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-789",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127496001",
+                    "Name": "Baby underware",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-792",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1037010",
+                    "Name": "Baby sweaters",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-793",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1037009",
+                    "Name": "Children's knitted sweaters",
+                    "IsParent": true,
+                    "ParentId": "otc-11",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-19",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-1813",
+            "Name": "Toys and games",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-185",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122988002",
+                    "Name": "Dolls",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-186",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122962001",
+                    "Name": "Electric and remote controlled toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-187",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127002083",
+                    "Name": "Building blocks and constructors",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-188",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-181309",
+                    "Name": "Education, scientific and educational toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-189",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-181302",
+                    "Name": "Models of transport, animals and household items",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-190",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201565322",
+                    "Name": "Children's musical toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-191",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122962004",
+                    "Name": "Strollers, carriers, baby transportation",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-192",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122984013",
+                    "Name": "Baby toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-193",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122990003",
+                    "Name": "Exotic toys, tricks",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-194",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122962011",
+                    "Name": "Role-play toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-195",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124022002",
+                    "Name": "Electronic and luminous toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-196",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201160102",
+                    "Name": "Dolls and doll accessories ",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-197",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1048131",
+                    "Name": "Inflatable toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-198",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1045593",
+                    "Name": "Children's toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-199",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201161304",
+                    "Name": "Plush and fabric dolls",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-200",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-181312",
+                    "Name": "Toys from stock",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-201",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043076",
+                    "Name": "Toy accessories ",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-202",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124736019",
+                    "Name": "Toys from cartoons and anime",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-203",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1045520",
+                    "Name": "Sports and traditional toys",
+                    "IsParent": true,
+                    "ParentId": "otc-19",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-943",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-1047981",
+            "Name": "Office Supplies",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-951",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-202054405",
+                    "Name": "Electric fireplace heater",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-952",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201641601",
+                    "Name": "Heating and cooling device",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-953",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1045066",
+                    "Name": "USB/Mini fans",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-957",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1047019",
+                    "Name": "Home fans",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-958",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122706007",
+                    "Name": "Mosquito trap lamps",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-959",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201869404",
+                    "Name": "Camping fan",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-963",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1047983",
+                    "Name": "Mini air conditioners",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-966",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122702007",
+                    "Name": "Ceiling fans",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-967",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124194010",
+                    "Name": "Convection fan",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-969",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124186014",
+                    "Name": "Bladeless fan",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-970",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122214003",
+                    "Name": "Electric blanket",
+                    "IsParent": true,
+                    "ParentId": "otc-943",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-24",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-18",
+            "Name": "Sports & Fitness",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-550",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1048300",
+                    "Name": "Sports bags and backpacks",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-556",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121876002",
+                    "Name": "Sports shoes",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-558",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-2009",
+                    "Name": "Fitness equipment",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-562",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044713",
+                    "Name": "Yoga",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-567",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122648001",
+                    "Name": "Sports and tourism eyeglasses",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-568",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1048069",
+                    "Name": "Sports and leisure clothing",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-569",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121898001",
+                    "Name": "Sports accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-570",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1048023",
+                    "Name": "Swimming accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-571",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044740",
+                    "Name": "Water sports",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-575",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1809",
+                    "Name": "Board sports",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-578",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044819",
+                    "Name": "Tennis and badminton",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-579",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044810",
+                    "Name": "Basketball",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-580",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122248001",
+                    "Name": "Volleyball",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-581",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-2005",
+                    "Name": "Golf",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-582",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044642",
+                    "Name": "Billiards",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-583",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044730",
+                    "Name": "Bowling",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-584",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044823",
+                    "Name": "Softball, hockey",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-585",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044824",
+                    "Name": "American football, squash, handball",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-586",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044785",
+                    "Name": "Ball game equipment",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-589",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-74",
+                    "Name": "Extreme sports products",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-590",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1044794",
+                    "Name": "Skates, rollers, scooters",
+                    "IsParent": true,
+                    "ParentId": "otc-24",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Id": "otc-940",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-653",
+            "Name": "Kitchen appliances",
+            "IsParent": true,
+            "IsInternal": true,
+            "subcategories": [
+                {
+                    "Id": "otc-1342",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-612",
+                    "Name": "Blenders",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1343",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-10144",
+                    "Name": "Coffee machines",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1344",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124256009",
+                    "Name": "Juicers",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1345",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-10060",
+                    "Name": "Electric kettles",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1346",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122700009",
+                    "Name": "Juicer blenders",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1347",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1036909",
+                    "Name": "Electric fry pan",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1349",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201304304",
+                    "Name": "Vacuum cleaners",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1351",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1036627",
+                    "Name": "Other kitchen appliances",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1356",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122704007",
+                    "Name": "Electric egg beater",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1360",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-637",
+                    "Name": "Induction cookers",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1361",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-121430002",
+                    "Name": "Icecream maker",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1367",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1032780",
+                    "Name": "Electric cooker",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1368",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1032729",
+                    "Name": "Electric oven",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1374",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-606",
+                    "Name": "Rice cookers",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1375",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1047884",
+                    "Name": "Bread makers and toasters",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1376",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124736039",
+                    "Name": "Ice maker",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1377",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1043799",
+                    "Name": "Electric pressure cooker",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1379",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201303607",
+                    "Name": "Drying machines",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1385",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124184004",
+                    "Name": "Mini rice cookers",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1404",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-605",
+                    "Name": "Microwave oven",
+                    "IsParent": true,
+                    "ParentId": "otc-940",
+                    "IsInternal": true
+                }
+            ]
+        },
+        {
+            "Id": "otc-4",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-6",
+            "Name": "Gadgets",
+            "IsParent": true,
+            "IsInternal": true,
+            "MetaData": {
+                "Item": [
+                    {
+                        "Name": "CategoryIconClass"
+                    }
+                ]
+            },
+            "subcategories": [
+                {
+                    "Id": "otc-1693",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-731",
+                    "Name": "Computer Hardware",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1692",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-10262",
+                    "Name": "Computer accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1691",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-50911",
+                    "Name": "SmartPhone accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1531",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201303723",
+                    "Name": "LED Lights",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1535",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-127880002",
+                    "Name": "Smart gadgets",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1536",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-2131",
+                    "Name": "Projectors & Cables",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1537",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-50910",
+                    "Name": "GPS, CC TV",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "otc-1673",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-122708008",
+                    "Name": "Speaker",
+                    "IsParent": true,
+                    "ParentId": "otc-4",
+                    "IsInternal": true,
+                    "MetaData": {
+                        "Item": [
+                            {
+                                "Name": "CategoryIconClass"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Id": "otc-17",
+            "ProviderType": "Alibaba1688",
+            "IsHidden": false,
+            "IsVirtual": false,
+            "ExternalId": "abb-122916002",
+            "Name": "Automobile accessories",
+            "IsParent": true,
+            "IsInternal": true,
+            "subcategories": [
+                {
+                    "Id": "otc-1270",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-124014003",
+                    "Name": "Auto parts",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1272",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201888805",
+                    "Name": "Car interior modification",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1273",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-1212",
+                    "Name": "Audio and video, navigation",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1274",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-92",
+                    "Name": "Car interior accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1275",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-3307",
+                    "Name": "Boots, rugs and pillows in interior",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1276",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-3312",
+                    "Name": "Automotive equipment",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1277",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-3308",
+                    "Name": "External tuning and accessories",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1278",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-201355911",
+                    "Name": "Car designs",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1280",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-10108",
+                    "Name": "Lights and headlights",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                },
+                {
+                    "Id": "otc-1281",
+                    "ProviderType": "Alibaba1688",
+                    "IsHidden": false,
+                    "IsVirtual": false,
+                    "ExternalId": "abb-79",
+                    "Name": "Car care products",
+                    "IsParent": true,
+                    "ParentId": "otc-17",
+                    "IsInternal": true
+                }
+            ]
+        }
+    ]
