@@ -10,13 +10,14 @@ router.get('/categories', ProductController.getAllCategories);
 router.get('/categories/:id/subcategories', ProductController.getSubcategories);
 
 // 3. Get product list under subcategory
-router.get('/subcategories/:id/products', ProductController.getProductsBySubcategory);
+router.get('/search', ProductController.getProductsByTitle);
 
 // 4. Get single product info
 router.get('/single/:id', ProductController.getSingleProductById);
 
 router.get('/categories-with-subcategories', ProductController.getCategoriesWithSubcategories);
-
+// 6. Popular products  ✅
+router.get('/popular', ProductController.getPopularProducts);
 // 5. Get vendor info
 router.get('/vendors/:id', ProductController.getVendorById);
 

@@ -145,21 +145,26 @@ const getCategoriesWithSubcategories = async (): Promise<
 };
 
 // 4. Get products by subcategory with cache
-const getProductsBySubcategory = async (
-  subCategoryId: string,
+const getProductsByTitle = async (
+  keyword: string,
   framePosition: number,
   frameSize: number,
 ): Promise<ProductListResponse> => {
 
-  const cacheKey = `products:${subCategoryId}:page=${framePosition}:size=${frameSize}`;
+  console.log('keyword ==>', keyword , 'fram size ==>', frameSize, 'page ==>', framePosition);
+  
+
+  const cacheKey = `products:${keyword}:page=${framePosition}:size=${frameSize}`;
   const cached = await getCache<ProductListResponse>(cacheKey);
   if (cached) {
     console.log('cached products');
     return cached;
   }
 
+
+
   try {
-    const xmlParameters = `<SearchItemsParameters><CategoryId>${subCategoryId}</CategoryId></SearchItemsParameters>`;
+    const xmlParameters = `<SearchItemsParameters><ItemTitle>${keyword}</ItemTitle></SearchItemsParameters>`;
     const url = `${baseURL}/BatchSearchItemsFrame?instanceKey=${instanceKey}&language=en&xmlParameters=${xmlParameters}&framePosition=${framePosition}&frameSize=${frameSize}&blockList=AvailableSearchMethods`;
 
     const { data }: AxiosResponse<any> = await axios.get(url);
@@ -247,12 +252,81 @@ const getVendorById = async (vendorId: string): Promise<Vendor | null> => {
   }
 };
 
+/**
+ * 7) Get "Popular" products with cache
+ * Mirrors the meta/data shape used by getProductsByTitle
+ */
+const getPopularProducts = async (
+  framePosition: number = 0,
+  frameSize: number = 40,
+): Promise<ProductListResponse> => {
+  // normalize & clamp
+  const page = Number.isFinite(framePosition) ? Math.max(0, framePosition) : 0;
+  const size = Number.isFinite(frameSize) ? Math.min(100, Math.max(1, frameSize)) : 40;
+
+  const cacheKey = `popular:page=${page}:size=${size}`;
+  const cached = await getCache<ProductListResponse>(cacheKey);
+  if (cached) return cached;
+
+  try {
+    const xmlSearchParameters =
+      `<RatingListItemSearchParameters>` +
+      `<ItemRatingType>Popular</ItemRatingType>` +
+      `</RatingListItemSearchParameters>`;
+
+    // buildUrl will URL-encode xmlSearchParameters for us
+    const url = buildUrl('SearchRatingListItems', {
+      xmlSearchParameters,
+      framePosition: page,
+      frameSize: size,
+    });
+
+    const { data }: AxiosResponse<any> = await axios.get(url);
+
+    console.log('Popular products API response:', data, 'url', url); // Debug log
+    
+
+    if (data?.ErrorCode !== 'Ok') {
+      throw new AppError(
+        httpStatus.BAD_GATEWAY,
+        data?.ErrorDescription || 'Failed to fetch popular products',
+      );
+    }
+
+    const items: Product[] = data?.OtapiItemInfoSubList?.Content || [];
+    const total: number = data?.Result?.Items?.Items?.TotalCount || 0;
+
+    const response: ProductListResponse = {
+      meta: {
+        page,
+        limit: size,
+        total,
+        totalPages: Math.ceil(total / size),
+        maximumPageCount: data?.Result?.Items?.MaximumPageCount || 0,
+      },
+      // Some responses include AvailableSearchMethods; keep shape consistent
+      filters: {
+        availableSearchMethods: data?.Result?.AvailableSearchMethods?.Content || [],
+      },
+      data: items,
+    };
+
+    await setCache(cacheKey, response); // cache (same TTL behavior as others)
+    return response;
+  } catch (error: any) {
+    throw error instanceof AppError
+      ? error
+      : new AppError(httpStatus.BAD_GATEWAY, 'Error fetching popular products');
+  }
+};
+
 // Export service with caching built-in
 export const ProductService = {
   getAllCategories,
   getSubcategories,
-  getProductsBySubcategory,
+  getProductsByTitle,
   getSingleProductById,
   getVendorById,
   getCategoriesWithSubcategories,
+  getPopularProducts
 };
