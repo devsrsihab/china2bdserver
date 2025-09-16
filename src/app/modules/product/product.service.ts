@@ -256,15 +256,19 @@ const getVendorById = async (vendorId: string): Promise<Vendor | null> => {
  * 7) Get "Popular" products with cache
  * Mirrors the meta/data shape used by getProductsByTitle
  */
+// 7) Popular products (SearchRatingListItems) — page index -> offset
 const getPopularProducts = async (
-  framePosition: number = 0,
+  framePosition: number = 0,   // treat as 0-based page index from client
   frameSize: number = 40,
 ): Promise<ProductListResponse> => {
   // normalize & clamp
-  const page = Number.isFinite(framePosition) ? Math.max(0, framePosition) : 0;
-  const size = Number.isFinite(frameSize) ? Math.min(100, Math.max(1, frameSize)) : 40;
+  const pageIndex = Number.isFinite(framePosition) ? Math.max(0, framePosition) : 0;
+  const size      = Number.isFinite(frameSize)     ? Math.min(100, Math.max(1, frameSize)) : 40;
 
-  const cacheKey = `popular:page=${page}:size=${size}`;
+  // OTAPI expects offset, not page index
+  const offset = pageIndex * size;
+
+  const cacheKey = `popular:page=${pageIndex}:size=${size}`;
   const cached = await getCache<ProductListResponse>(cacheKey);
   if (cached) return cached;
 
@@ -274,51 +278,70 @@ const getPopularProducts = async (
       `<ItemRatingType>Popular</ItemRatingType>` +
       `</RatingListItemSearchParameters>`;
 
-    // buildUrl will URL-encode xmlSearchParameters for us
-    const url = buildUrl('SearchRatingListItems', {
+    // buildUrl URL-encodes for us
+    const url = buildUrl("SearchRatingListItems", {
       xmlSearchParameters,
-      framePosition: page,
+      framePosition: offset, // <-- offset, not page index
       frameSize: size,
     });
 
     const { data }: AxiosResponse<any> = await axios.get(url);
+    // Debug (optional):
+    // console.log("Popular products API response:", { hasErrorCode: data?.ErrorCode, url });
 
-    console.log('Popular products API response:', data, 'url', url); // Debug log
-    
-
-    if (data?.ErrorCode !== 'Ok') {
+    if (data?.ErrorCode && data.ErrorCode !== "Ok") {
       throw new AppError(
         httpStatus.BAD_GATEWAY,
-        data?.ErrorDescription || 'Failed to fetch popular products',
+        data?.ErrorDescription || "Failed to fetch popular products",
       );
     }
 
-    const items: Product[] = data?.OtapiItemInfoSubList?.Content || [];
-    const total: number = data?.Result?.Items?.Items?.TotalCount || 0;
+    // Tolerate small schema differences across OTAPI responses
+    const itemsContent =
+      data?.Result?.Items?.Items?.Content ??
+      data?.OtapiItemInfoSubList?.Content ??
+      data?.Result?.Content ??
+      data?.Content ??
+      [];
+
+    const totalCount =
+      data?.Result?.Items?.Items?.TotalCount ??
+      data?.OtapiItemInfoSubList?.TotalCount ??
+      data?.Result?.TotalCount ??
+      data?.TotalCount ??
+      (Array.isArray(itemsContent) ? itemsContent.length : 0);
+
+    const maximumPageCount =
+      data?.Result?.Items?.MaximumPageCount ??
+      data?.MaximumPageCount ??
+      0;
+
+    const items: Product[] = itemsContent;
 
     const response: ProductListResponse = {
       meta: {
-        page,
+        page: pageIndex,                            // keep page index for the client
         limit: size,
-        total,
-        totalPages: Math.ceil(total / size),
-        maximumPageCount: data?.Result?.Items?.MaximumPageCount || 0,
+        total: totalCount,
+        totalPages: Math.ceil((totalCount || 0) / size),
+        maximumPageCount,
       },
-      // Some responses include AvailableSearchMethods; keep shape consistent
       filters: {
-        availableSearchMethods: data?.Result?.AvailableSearchMethods?.Content || [],
+        availableSearchMethods:
+          data?.Result?.AvailableSearchMethods?.Content ?? [],
       },
       data: items,
     };
 
-    await setCache(cacheKey, response); // cache (same TTL behavior as others)
+    await setCache(cacheKey, response); // reuse your default TTL (e.g., 72h)
     return response;
   } catch (error: any) {
     throw error instanceof AppError
       ? error
-      : new AppError(httpStatus.BAD_GATEWAY, 'Error fetching popular products');
+      : new AppError(httpStatus.BAD_GATEWAY, "Error fetching popular products");
   }
 };
+
 
 // Export service with caching built-in
 export const ProductService = {
