@@ -22,11 +22,7 @@ const UserNameSchema = new Schema<TUserName>({
 // faculty schema
 const AdminSchema = new Schema<TAdmin>(
   {
-    id: {
-      type: String,
-      required: true,
-      unique: true,
-    },
+
     user: {
       type: Schema.Types.ObjectId,
       ref: 'User',

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import mongoose from 'mongoose';
+import mongoose, { Types } from 'mongoose';
 import config from '../../config';
 import { TUser } from './user.interface';
 import { User } from './user.model';
@@ -49,32 +49,26 @@ const softDeleteUser = async (id: string) => {
 };
 
 // create Admin
-const createAdminToDB = async (password: string, payload: TAdmin) => {
-  // create a user object
+const createAdminToDB = async (password: string, payload: Partial<TAdmin>) => {
   const userData: Partial<TUser> = {};
 
-  // if the password empty
   userData.password = password || (config.user_default_password as string);
-  // set user role
   userData.role = 'admin';
-  // create admin email
   userData.email = payload.email;
-  // start session
+
   const session = await mongoose.startSession();
 
   try {
-    // start session
     session.startTransaction();
 
-    // create a user transaction 01
-    const newUser = await User.create([userData], { session }); // transaction return array
-    // if created the user successfully then create the user
+    const newUser = await User.create([userData], { session });
+
     if (!newUser.length) {
       throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create user');
     }
 
-    // set student user field data
-    payload.user = newUser[0]._id; // reference id
+    // ✅ now TS accepts ObjectId
+    payload.user = newUser[0]._id as unknown as Types.ObjectId;
 
     const newAdmin = await Admin.create([payload], { session });
 
@@ -96,6 +90,7 @@ const createAdminToDB = async (password: string, payload: TAdmin) => {
     }
   }
 };
+
 
 // get me servcies
 const getMeFromDB = async (email: string, role: string) => {

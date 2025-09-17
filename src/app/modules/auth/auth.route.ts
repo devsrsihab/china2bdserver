@@ -23,7 +23,7 @@ router.post(
 // passwrod change
 router.post(
   '/change-password',
-  auth(USER_ROLE.admin, USER_ROLE.user, USER_ROLE.supplier, USER_ROLE.manager),
+  auth(USER_ROLE.admin, USER_ROLE.user, USER_ROLE.manager),
   validateRequest(AuthValidation.changePasswordValidatonSchema),
   AuthControllers.changePassword,
 );
@@ -48,5 +48,8 @@ router.post(
   validateRequest(AuthValidation.resetPasswordValidationSchema),
   AuthControllers.resetPassword,
 );
+router.post("/send-otp", AuthControllers.sendOtp);
+router.post("/verify-otp", AuthControllers.verifyOtp);
+
 
 export const AuthRoute = router;

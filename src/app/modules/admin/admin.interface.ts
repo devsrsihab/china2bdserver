@@ -8,7 +8,6 @@ export type TUserName = {
 };
 
 export type TAdmin = {
-  id: string;
   user: Types.ObjectId;
   designation: string;
   name: TUserName;
@@ -22,3 +21,4 @@ export type TAdmin = {
   profileImg?: string;
   isDeleted: boolean;
 };
+

@@ -91,6 +91,53 @@ const resetPassword = catchAsync(async (req, res) => {
   });
 });
 
+
+// 🔹 Send OTP (phone OR email)
+const sendOtp = catchAsync(async (req, res) => {
+  const { phone, email } = req.body;
+
+  if (!phone && !email) {
+    return sendResponse(res, {
+      statusCode: httpStatus.BAD_REQUEST,
+      success: false,
+      message: "Phone or Email is required",
+      data: null,
+    });
+  }
+
+  const result = await AuthServices.sendOtp({ phone, email });
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "OTP sent successfully",
+    data: result,
+  });
+});
+
+// 🔹 Verify OTP (phone OR email + otp)
+const verifyOtp = catchAsync(async (req, res) => {
+  const { phone, email, otp } = req.body;
+
+  if ((!phone && !email) || !otp) {
+    return sendResponse(res, {
+      statusCode: httpStatus.BAD_REQUEST,
+      success: false,
+      message: "Phone/Email and OTP are required",
+      data: null,
+    });
+  }
+
+  const result = await AuthServices.verifyOtp({ phone, email }, otp);
+
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: "Login successful",
+    data: result,
+  });
+});
+
 export const AuthControllers = {
   loginUser,
   changePassword,
@@ -98,4 +145,6 @@ export const AuthControllers = {
   forgetPassword,
   resetPassword,
   registerUser,
+  verifyOtp,
+  sendOtp
 };

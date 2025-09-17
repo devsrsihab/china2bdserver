@@ -9,8 +9,8 @@ const USER_STATUS = ['active', 'blocked'] as const;
 const userSchema = new Schema<TUser, UserModel>(
   {
     name: { type: String, required: true, trim: true },
-    email: { type: String, required: true, unique: true, lowercase: true, trim: true },
-    phone: { type: String, trim: true },
+    email: { type: String,  unique: true, lowercase: true, trim: true },
+    phone: { type: String, trim: true, required: true, },
     address: { type: String },
     district: { type: String },
     city: { type: String },

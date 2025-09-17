@@ -1,16 +1,23 @@
-import Jwt, { JwtPayload } from 'jsonwebtoken';
-import jwt from 'jsonwebtoken';
-export const createToken = (
-  jwtPayload: { email: string; role: string },
-  secret: string,
-  expiresIn: string,
-) => {
-  return Jwt.sign(jwtPayload, secret, {
-    expiresIn,
-  });
+import jwt, { JwtPayload } from "jsonwebtoken";
+import { TUserRole } from "../user/user.interface"; // adjust import path
+
+// Define a reusable payload type
+export type TJwtPayload = {
+  email?: string;  // optional
+  phone?: string;  // optional
+  role: TUserRole; // required
 };
 
-// verfiy token
-export const verifyToken = (token: string, secret: string) => {
-  return jwt.verify(token, secret) as JwtPayload;
+// Create token
+export const createToken = (
+  jwtPayload: TJwtPayload,
+  secret: string,
+  expiresIn: string
+): string => {
+  return jwt.sign(jwtPayload, secret, { expiresIn });
+};
+
+// Verify token
+export const verifyToken = (token: string, secret: string): JwtPayload & TJwtPayload => {
+  return jwt.verify(token, secret) as JwtPayload & TJwtPayload;
 };

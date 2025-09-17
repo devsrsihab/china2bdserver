@@ -3,22 +3,51 @@ import { z } from 'zod';
 const roleEnum = z.enum(['user', 'admin', 'supplier', 'manager']);
 const statusEnum = z.enum(['active', 'inactive', 'banned']);
 
+const phoneSchema = z
+  .string({
+    required_error: "Phone number is required",
+    invalid_type_error: "Phone number must be a string",
+  })
+  .refine(
+    (val) => {
+      // With country code: +8801[3-9]XXXXXXXX (total 14 chars)
+      const withCountryCode = /^\+8801[3-9]\d{8}$/;
+      // Without country code: 01[3-9]XXXXXXXX (total 11 chars)
+      const withoutCountryCode = /^01[3-9]\d{8}$/;
+
+      return withCountryCode.test(val) || withoutCountryCode.test(val);
+    },
+    {
+      message:
+        "Phone number must be a valid Bangladeshi number (e.g. 017XXXXXXXX or +88017XXXXXXXX)",
+    },
+  );
+
+
 // register validation
 const registerValidationSchema = z.object({
   body: z.object({
-    name: z.string().min(3, 'Name is required'),
-    email: z.string().email('Invalid email'),
-    password: z.string().min(6, 'Password must be at least 6 characters'),
+    name: z.string().min(3, "Name is required"),
 
-    phone: z.string().optional(),
+    // email now optional ✅
+    email: z
+      .string()
+      .email("Invalid email")
+      .optional(),
+
+    password: z.string().min(6, "Password must be at least 6 characters"),
+
+    // phone now required ✅
+    phone: phoneSchema,
+
     address: z.string().optional(),
     district: z.string().optional(),
     city: z.string().optional(),
     emergencyNumber: z.string().optional(),
-    profileImage: z.string().url('Must be a valid URL').optional(),
+    profileImage: z.string().url("Must be a valid URL").optional(),
 
-    role: roleEnum.default('user'),
-    status: statusEnum.default('active'),
+    role: roleEnum.default("user"),
+    status: statusEnum.default("active"),
   }),
 });
 

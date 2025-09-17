@@ -53,7 +53,7 @@ router.post(
 );
 
 // get me
-router.get('/me', auth(USER_ROLE.admin,USER_ROLE.superAdmin, USER_ROLE.user, USER_ROLE.supplier), UserController.getMe);
+router.get('/me', auth(USER_ROLE.admin,USER_ROLE.superAdmin, USER_ROLE.user), UserController.getMe);
 
 // change status
 router.patch(
